@@ -1,8 +1,11 @@
 VariousRecordingApp::Application.routes.draw do
   root      'static_pages#home'
   resources :users
+  resources :sessions,       only: [:new, :create, :destroy]
   get       '/home',         to: 'static_pages#home'
   get       '/signup',       to: 'users#new'
+  get       '/signin',       to: 'sessions#new'
+  delete    '/signout',      to: 'sessions#destroy'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

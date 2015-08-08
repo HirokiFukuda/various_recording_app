@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
 
-  skip_before_action :check_logined, only: [:new, :create]
+#  skip_before_action :check_logined, only: [:new, :create]
   before_action :correct_user,   only: [:edit, :update]
   def show
     @user = User.find(params[:id])

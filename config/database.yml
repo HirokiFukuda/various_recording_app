@@ -25,8 +25,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database:
-  username:
-  password:
-  pool: 5
+  database: d4m0b97dkqacch
+  host: h-WoXGTzCwbv8595DwgX3Sqkcw
+  username: srjfxsimlzhufj
+  password: h-WoXGTzCwbv8595DwgX3Sqkcw
+  pool: 5432
   timeout: 5000
